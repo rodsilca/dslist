@@ -10,7 +10,7 @@ import java.util.Objects;
 public class Game {
     @Id //Transforma o id em chave primaria no banco
     @GeneratedValue(strategy = GenerationType.IDENTITY) //faz ele ser auto incrementavel
-    private Integer id;
+    private Long id;
     private String title;
 
     @Column(name = "game_year")
@@ -29,7 +29,7 @@ public class Game {
 
     public Game(){}
 
-    public Game(Integer id, String title, Integer year, String genre, String platforms, Double score, String imgURL, String shortDescription, String longDescription) {
+    public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgURL, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -41,11 +41,11 @@ public class Game {
         this.longDescription = longDescription;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
