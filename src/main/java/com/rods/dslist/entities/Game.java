@@ -18,9 +18,14 @@ public class Game {
     private String genre;
     private String platforms;
     private Double score;
-    private String imgURL;
+    private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
+
 
     public Game(){}
 
@@ -31,7 +36,7 @@ public class Game {
         this.genre = genre;
         this.platforms = platforms;
         this.score = score;
-        this.imgURL = imgURL;
+        this.imgUrl = imgURL;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
     }
@@ -85,11 +90,11 @@ public class Game {
     }
 
     public String getImgURL() {
-        return imgURL;
+        return imgUrl;
     }
 
     public void setImgURL(String imgURL) {
-        this.imgURL = imgURL;
+        this.imgUrl = imgURL;
     }
 
     public String getShortDescription() {
