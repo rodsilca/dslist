@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+//CONTROLADOR REST
+
 @RestController
 @RequestMapping(value = "/games")
 public class GameController {

@@ -2,6 +2,8 @@ package com.rods.dslist.dto;
 
 import com.rods.dslist.entities.Game;
 
+//DTO
+
 public class GameMinDTo {
 
     private Long id;

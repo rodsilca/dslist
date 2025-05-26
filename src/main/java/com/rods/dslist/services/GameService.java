@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//CAMADA DE SERVICO
+
 @Service
 public class GameService  {
 
